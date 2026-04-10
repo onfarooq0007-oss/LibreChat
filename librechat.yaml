@@ -345,7 +345,7 @@ endpoints:
           - 'llama2-70b-4096'
           - 'mixtral-8x7b-32768'
           - 'gemma-7b-it'
-        fetch: false
+        fetch: true
       titleConvo: true
       titleModel: 'mixtral-8x7b-32768'
       modelDisplayLabel: 'groq'
@@ -607,3 +607,11 @@ endpoints:
 #     # instructions: "You are a memory management assistant. Store and manage user information accurately."
 #     # model_parameters:
 #     #   temperature: 0.1
+custom:
+  - name: "vLLM-OSS"
+    apiKey: "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" # or your vLLM api key
+    baseURL: "https://integrate.api.nvidia.com/v1"
+    models:
+      default: ["gpt-oss-120b"]
+    modelDisplayLabel: "Local GPT-OSS"
+    
