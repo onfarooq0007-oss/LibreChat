@@ -348,7 +348,18 @@ endpoints:
       titleConvo: true
       titleModel: 'mixtral-8x7b-32768'
       modelDisplayLabel: 'groq'
-
+    
+    #gptoss
+    - name: 'gptoss'
+      apiKey: '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'
+      baseURL: 'https://integrate.api.nvidia.com/v1'
+      models:
+        default:
+        fetch: false
+      titleConvo: true
+      titleModel: 'gptoss'
+      modelDisplayLabel: 'gpt'
+      
     # Mistral AI Example
     - name: 'Mistral' # Unique name for the endpoint
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
