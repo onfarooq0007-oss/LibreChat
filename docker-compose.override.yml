@@ -12,21 +12,23 @@
 # EXAMPLE: if you want to use the config file and the latest numbered release docker image the result will be:
 
 services:
-  api:
-    volumes:
-      - type: bind
-        source: ./librechat.yaml
-        target: /app/librechat.yaml
+ api:
+     volumes:
+     - type: bind
+       source: ./librechat.yaml
+       target: /app/librechat.yaml
+       image: registry.librechat.ai/danny-avila/librechat:latest
+
 # ---------------------------------------------------
 
-# services:
+ services:
 
 # # USE LIBRECHAT CONFIG FILE
-#   api:
-#     volumes:
-#     - type: bind
-#       source: ./librechat.yaml
-#       target: /app/librechat.yaml
+   api:
+    volumes:
+     - type: bind
+       source: ./librechat.yaml
+       target: /app/librechat.yaml
 
 # # LOCAL BUILD
 #   api:
