@@ -333,15 +333,6 @@ endpoints:
   #     #   claude-3.5-haiku:
   #     #     deploymentName: claude-3-5-haiku@20241022  # Override for this model
   custom:
-  
-  - name: 'vLLM-OSS'
-    apiKey: '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'
-    baseURL: 'https://integrate.api.nvidia.com/v1'
-    models:
-      default: ['gpt-oss-120b']
-    modelDisplayLabel: 'Local GPT-OSS'
-    
-
     # Groq Example
     - name: 'groq'
       apiKey: '${GROQ_API_KEY}'
