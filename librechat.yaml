@@ -351,10 +351,11 @@ endpoints:
     
     #gptoss
     - name: 'gptoss'
-      apiKey: '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'
+      apiKey: '${GPTOSS}'
       baseURL: 'https://integrate.api.nvidia.com/v1'
       models:
         default:
+        ['Gptoss']
         fetch: false
       titleConvo: true
       titleModel: 'gptoss'
