@@ -354,11 +354,11 @@ endpoints:
       apiKey: '${GPT_OSS_KEY}'
       baseURL: 'https://integrate.api.nvidia.com/v1'
       models:
-        default: ['gpt-oss-120b']
+        default: ['openai/gpt-oss-120b']
         fetch: false
       titleConvo: true
-      titleModel: 'gptoss'
-      modelDisplayLabel: 'gpt'
+      titleModel: 'openai/gpt-oss-120b'
+      modelDisplayLabel: 'openai/gpt-oss-120b'
       
     # Mistral AI Example
     - name: 'Mistral' # Unique name for the endpoint
