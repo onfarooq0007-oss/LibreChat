@@ -350,11 +350,11 @@ endpoints:
       modelDisplayLabel: 'groq'
     
     #gptoss
-    - name: 'gptoss'
+    - name: 'NVIDIA'
       apiKey: '${GPT_OSS_KEY}'
       baseURL: 'https://integrate.api.nvidia.com/v1'
       models:
-        default: ['openai/gpt-oss-120b']
+        default: ['openai/gpt-oss-120b', 'stepfun-ai/step-3.5-flash', 'meta/llama-3.1-405b-instruct', 'deepseek-ai/deepseek-v3.2', 'mistralai/devstral-2-123b-instruct-2512', 'moonshotai/kimi-k2-thinking', 'mistralai/mistral-large-3-675b-instruct-2512' ]
         fetch: false
       titleConvo: true
       titleModel: 'openai/gpt-oss-120b'
