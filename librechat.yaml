@@ -339,11 +339,11 @@ endpoints:
       baseURL: 'https://api.groq.com/openai/v1/'
       models:
         default:
-          - 'llama3-70b-8192'
-          - 'llama3-8b-8192'
-          - 'llama2-70b-4096'
-          - 'mixtral-8x7b-32768'
-          - 'gemma-7b-it'
+          - 'openai/gpt-oss-120b'
+          - 'llama-3.3-70b-versatile'
+          - 'groq/compound'
+          - 'groq/compound-mini'
+          - 'openai/gpt-oss-safeguard-20b'
         fetch: false
       titleConvo: true
       titleModel: 'mixtral-8x7b-32768'
@@ -354,12 +354,13 @@ endpoints:
       apiKey: '${GPT_OSS_KEY}'
       baseURL: 'https://integrate.api.nvidia.com/v1'
       models:
-        default: ['openai/gpt-oss-120b', 'stepfun-ai/step-3.5-flash', 'meta/llama-3.1-405b-instruct', 'deepseek-ai/deepseek-v3.2', 'mistralai/devstral-2-123b-instruct-2512', 'moonshotai/kimi-k2-thinking', 'mistralai/mistral-large-3-675b-instruct-2512' ]
+        default: ['openai/gpt-oss-120b', 'stepfun-ai/step-3.5-flash', 'meta/llama-3.1-405b-instruct', 'deepseek-ai/deepseek-v3.2', 'mistralai/devstral-2-123b-instruct-2512', 'moonshotai/kimi-k2-thinking', 'mistralai/mistral-large-3-675b-instruct-2512', 'stabilityai/stable-diffusion-3-medium', 'igenius/colosseum_355b_instruct_16k', 'meta/llama-4-maverick-17b-128e-instruct', 'mistralai/magistral-small-2506', 'moonshotai/kimi-k2-instruct', 'deepseek-ai/deepseek-v3.1', 'bytedance/seed-oss-36b-instruct', 'qwen/qwen3-coder-480b-a35b-instruct', 'moonshotai/kimi-k2-instruct-0905', 'deepseek-ai/deepseek-v3.1-terminus' ]
         fetch: false
       titleConvo: true
       titleModel: 'openai/gpt-oss-120b'
       modelDisplayLabel: 'openai/gpt-oss-120b'
-      
+      addParams:
+        thinking: true
     # Mistral AI Example
     - name: 'Mistral' # Unique name for the endpoint
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
